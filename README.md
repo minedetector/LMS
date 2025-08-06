@@ -16,10 +16,10 @@ Below are examples of the logs that will be processed by our system:
 
 ## Requirements
 
-Create a complete log management system with the following components:
+Setup a log management system with the following components:
 
-1. **Log Reading Tool:** Build a tool that reads logs from a file and sends them to a syslog server on a custom port.
-1. **Syslog Server:** Develop a syslog server that listens on a custom port and performs the following actions when logs arrive:
+1. **Log Reading Tool:** Create a tool that reads logs from a file and sends them to a syslog server on a custom port.
+1. **Syslog Server:** Setup a syslog server that listens on a custom port and performs the following actions when logs arrive:
     - Save each log to `/sb/logs/incoming/$year/$month/$day/$fromhost_ip/syslog.log` where `$year`, `$month`, `$day` are current date values and `$fromhost_ip` is the sender's IP address
     - Analyze log content and forward any logs containing "TRAFFIC" to a SIEM tool
 1. **SIEM tool.**
