@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   log-reader:
     build: ./log-reader
@@ -12,6 +10,7 @@ services:
     build: ./rsyslog
     volumes:
       - ./logs:/sb/logs
+      - ./rsyslog/rsyslog.conf:/etc/rsyslog.conf
     ports:
       - "5514:5514/udp"
       - "5514:5514/tcp"
