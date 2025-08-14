@@ -29,7 +29,9 @@ Setup a log management system with the following components:
 Provide documentation with the following evidence:
 - Output from the log reading tool showing the reading and forwarding process
 - Screenshots or listings of saved log files in the correct directory structure on the syslog server
+  - ![img.png](img.png)
 - Query results from the SIEM tool confirming that only TRAFFIC logs were received
 - Explanation of your solution.
 
 Please use own github repository.
+
